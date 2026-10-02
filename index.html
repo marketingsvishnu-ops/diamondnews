@@ -1,343 +1,206 @@
-```html
-<!-- TOMORROW'S MATCHES -->
-<section class="tomorrow-section" id="schedule">
-
-  <div class="section-title">
-    <div>
-      <span class="section-label">MATCH SCHEDULE</span>
-      <h2>📅 Tomorrow's Matches</h2>
-    </div>
-
-    <span class="tomorrow-badge">3 MATCHES</span>
-  </div>
-
-
-  <div class="tomorrow-grid">
-
-    <!-- MATCH 1 -->
-    <article class="match-card">
-
-      <div class="series">
-        <span>🏆 Asian Games 2026</span>
-        <span class="match-type">BRONZE MEDAL</span>
-      </div>
-
-      <h3>Bangladesh <span>vs</span> Sri Lanka</h3>
-
-      <p class="match-title">
-        Bronze Medal Match
-      </p>
-
-      <div class="match-info">
-        <div>
-          <span class="info-label">📍 Venue</span>
-          <strong>Korogi Sports Park, Nisshin</strong>
-        </div>
-
-        <div>
-          <span class="info-label">⏰ Start Time</span>
-          <strong>5:30 AM Tomorrow</strong>
-        </div>
-
-        <div>
-          <span class="info-label">🌍 GMT</span>
-          <strong>12:00 AM GMT</strong>
-        </div>
-
-        <div>
-          <span class="info-label">🇯🇵 Local</span>
-          <strong>9:00 AM LOCAL</strong>
-        </div>
-      </div>
-
-      <a
-        href="https://www.cricbuzz.com/live-cricket-scores/171061/ban-vs-sl-bronze-medal-match-asian-games-2026"
-        target="_blank"
-        class="match-btn"
-      >
-        Live Score →
-      </a>
-
-    </article>
-
-
-    <!-- MATCH 2 -->
-    <article class="match-card featured-match">
-
-      <div class="series">
-        <span>🏆 Asian Games 2026</span>
-        <span class="match-type gold">GOLD MEDAL</span>
-      </div>
-
-      <h3>Pakistan <span>vs</span> India</h3>
-
-      <p class="match-title">
-        Gold Medal Match
-      </p>
-
-      <div class="match-info">
-        <div>
-          <span class="info-label">📍 Venue</span>
-          <strong>Korogi Sports Park, Nisshin</strong>
-        </div>
-
-        <div>
-          <span class="info-label">⏰ Start Time</span>
-          <strong>10:00 AM Tomorrow</strong>
-        </div>
-
-        <div>
-          <span class="info-label">🌍 GMT</span>
-          <strong>4:30 AM GMT</strong>
-        </div>
-
-        <div>
-          <span class="info-label">🇯🇵 Local</span>
-          <strong>1:30 PM LOCAL</strong>
-        </div>
-      </div>
-
-      <a
-        href="https://www.cricbuzz.com/live-cricket-scores/171070/pak-vs-ind-gold-medal-match-asian-games-2026"
-        target="_blank"
-        class="match-btn"
-      >
-        Live Score →
-      </a>
-
-    </article>
-
-
-    <!-- MATCH 3 -->
-    <article class="match-card">
-
-      <div class="series">
-        <span>🌍 West Indies Tour of India 2026</span>
-        <span class="match-type">ODI</span>
-      </div>
-
-      <h3>India <span>vs</span> West Indies</h3>
-
-      <p class="match-title">
-        3rd ODI
-      </p>
-
-      <div class="match-info">
-        <div>
-          <span class="info-label">📍 Venue</span>
-          <strong>PCA International Cricket Stadium, Ground A, New Chandigarh</strong>
-        </div>
-
-        <div>
-          <span class="info-label">⏰ Start Time</span>
-          <strong>2:00 PM Tomorrow</strong>
-        </div>
-
-        <div>
-          <span class="info-label">🌍 GMT</span>
-          <strong>8:30 AM GMT</strong>
-        </div>
-
-        <div>
-          <span class="info-label">🇮🇳 Local</span>
-          <strong>2:00 PM LOCAL</strong>
-        </div>
-      </div>
-
-      <a
-        href="https://www.cricbuzz.com/live-cricket-scores/151554/ind-vs-wi-3rd-odi-west-indies-tour-of-india-2026"
-        target="_blank"
-        class="match-btn"
-      >
-        Live Score →
-      </a>
-
-    </article>
-
-  </div>
-
-</section>
-
-
-<style>
-
-  /* TOMORROW MATCHES */
-
-  .tomorrow-section {
-    margin-bottom: 50px;
-  }
-
-  .section-label {
-    display: block;
-    color: #079455;
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-    margin-bottom: 5px;
-  }
-
-  .tomorrow-badge {
-    background: #071b13;
-    color: #19d47b;
-    padding: 8px 13px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: bold;
-  }
-
-  .tomorrow-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-  }
-
-  .match-card {
-    background: white;
-    border-radius: 14px;
-    padding: 24px;
-    border: 1px solid #e4e8e6;
-    box-shadow: 0 5px 18px rgba(0, 0, 0, .06);
-    transition: .25s;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .match-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, .10);
-  }
-
-  .match-card::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 5px;
-    height: 100%;
-    background: #19d47b;
-  }
-
-  .featured-match {
-    border: 2px solid #19d47b;
-  }
-
-  .series {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-    color: #079455;
-    font-size: 12px;
-    font-weight: bold;
-  }
-
-  .match-type {
-    background: #e9f8f0;
-    color: #087443;
-    padding: 5px 8px;
-    border-radius: 4px;
-    white-space: nowrap;
-    font-size: 10px;
-  }
-
-  .match-type.gold {
-    background: #fff3c4;
-    color: #9a7200;
-  }
-
-  .match-card h3 {
-    font-size: 24px;
-    margin-bottom: 7px;
-  }
-
-  .match-card h3 span {
-    color: #9aa3a0;
-    font-size: 15px;
-    margin: 0 5px;
-  }
-
-  .match-title {
-    color: #667085;
-    font-size: 14px;
-    margin-bottom: 20px;
-  }
-
-  .match-info {
-    border-top: 1px solid #edf0ee;
-    border-bottom: 1px solid #edf0ee;
-    padding: 15px 0;
-  }
-
-  .match-info div {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    margin-bottom: 13px;
-  }
-
-  .match-info div:last-child {
-    margin-bottom: 0;
-  }
-
-  .info-label {
-    color: #89938e;
-    font-size: 11px;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-
-  .match-info strong {
-    color: #25332c;
-    font-size: 13px;
-    line-height: 1.4;
-  }
-
-  .match-btn {
-    display: block;
-    margin-top: 20px;
-    background: #071b13;
-    color: white;
-    text-align: center;
-    padding: 11px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 13px;
-    transition: .2s;
-  }
-
-  .match-btn:hover {
-    background: #079455;
-  }
-
-
-  /* RESPONSIVE */
-
-  @media (max-width: 1000px) {
-
-    .tomorrow-grid {
-      grid-template-columns: repeat(2, 1fr);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>DiamondNews | Cricket News, Match Updates & Blog</title>
+
+  <meta
+    name="description"
+    content="DiamondNews - Latest cricket news, match updates, live scores, tournament news, player stories and cricket blogs."
+  />
+
+  <style>
+    :root {
+      --green: #075b43;
+      --green-dark: #043c2d;
+      --green-light: #e9f7f1;
+      --lime: #c9f13a;
+      --red: #e53935;
+      --gold: #f4b942;
+      --white: #ffffff;
+      --black: #101614;
+      --text: #1b2521;
+      --muted: #71807a;
+      --border: #e4ebe7;
+      --bg: #f5f7f6;
+      --card: #ffffff;
+      --shadow: 0 10px 35px rgba(0, 50, 35, 0.08);
+      --radius: 16px;
     }
 
-  }
-
-
-  @media (max-width: 650px) {
-
-    .tomorrow-grid {
-      grid-template-columns: 1fr;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .section-title {
-      align-items: flex-start;
+    html {
+      scroll-behavior: smooth;
     }
 
-    .match-card h3 {
-      font-size: 21px;
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
     }
 
-  }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-</style>
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    button,
+    input {
+      font-family: inherit;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: auto;
+    }
+
+    /* =========================
+       TOP BAR
+    ========================== */
+
+    .topbar {
+      background: var(--green-dark);
+      color: #d9eee7;
+      font-size: 13px;
+      padding: 8px 0;
+    }
+
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .top-links {
+      display: flex;
+      gap: 18px;
+    }
+
+    .top-links a:hover {
+      color: var(--lime);
+    }
+
+    /* =========================
+       HEADER
+    ========================== */
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .header-main {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 25px;
+      font-weight: 900;
+      color: var(--green);
+      white-space: nowrap;
+    }
+
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: var(--green);
+      color: var(--lime);
+      font-size: 23px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    nav a {
+      color: #34433e;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    nav a:hover {
+      color: var(--green);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .search-box {
+      position: relative;
+    }
+
+    .search-box input {
+      width: 180px;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 10px 15px;
+      outline: none;
+      background: #fafcfa;
+    }
+
+    .search-box input:focus {
+      border-color: var(--green);
+    }
+
+    .menu-btn {
+      display: none;
+      border: 0;
+      background: var(--green);
+      color: white;
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    /* =========================
+       BREAKING NEWS
+    ========================== */
+
+    .breaking {
+      background: var(--red);
+      color: white;
+      overflow: hidden;
+    }
+
+    .breaking-inner {
+      display: flex;
+      align-items: center;
+      min-height: 42px;
+    }
+
+    .b
 ```
